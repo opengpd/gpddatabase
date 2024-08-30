@@ -1,8 +1,8 @@
-#include "../include/DataObjectGeneralInfo.h"
+#include "../include/gpddatabase/DataObjectGeneralInfo.h"
 
 #include <iostream>
 
-#include "../include/Utility.h"
+#include "../include/gpddatabase/Utility.h"
 
 namespace gpddatabase{
 

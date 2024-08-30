@@ -1,9 +1,9 @@
-#include "../include/ExclusiveDatabase.h"
+#include "../include/gpddatabase/ExclusiveDatabase.h"
 
 #include <iostream>
 #include <string>
 
-#include "../include/Utility.h"
+#include "../include/gpddatabase/Utility.h"
 
 namespace gpddatabase{
 

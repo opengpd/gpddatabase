@@ -1,8 +1,8 @@
-#include "../include/DataObjectKinematicBin.h"
+#include "../include/gpddatabase/DataObjectKinematicBin.h"
 
 #include <iostream>
 
-#include "../include/Utility.h"
+#include "../include/gpddatabase/Utility.h"
 
 namespace gpddatabase{
 

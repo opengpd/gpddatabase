@@ -3,11 +3,11 @@
 
 #include <memory>
 
-#include "PythonObject.h"
-#include "DataObjectUUID.h"
-#include "DataObjectGeneralInfo.h"
-#include "DataObjectCorrelation.h"
-#include "DataObjectData.h"
+#include "gpddatabase/PythonObject.h"
+#include "gpddatabase/DataObjectUUID.h"
+#include "gpddatabase/DataObjectGeneralInfo.h"
+#include "gpddatabase/DataObjectCorrelation.h"
+#include "gpddatabase/DataObjectData.h"
 
 namespace gpddatabase{
 

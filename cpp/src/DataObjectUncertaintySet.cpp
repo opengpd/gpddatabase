@@ -1,8 +1,8 @@
-#include "../include/DataObjectUncertaintySet.h"
+#include "../include/gpddatabase/DataObjectUncertaintySet.h"
 
 #include <iostream>
 
-#include "../include/Utility.h"
+#include "../include/gpddatabase/Utility.h"
 
 namespace gpddatabase{
 
