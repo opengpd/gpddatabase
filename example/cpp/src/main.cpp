@@ -1,6 +1,8 @@
-#include "../include/ExclusiveDatabase.h"
+#include <gpddatabase/ExclusiveDatabase.h>
 
 #include <iostream>
+
+using namespace gpddatabase;
 
 int main() {
     // Create an instance of the Python class

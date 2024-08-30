@@ -21,7 +21,7 @@ ExclusiveDatabase* ExclusiveDatabase::getInstance(){
 ExclusiveDatabase::ExclusiveDatabase() {
 
     //names
-    const std::string moduleName = "gpd_database";
+    const std::string moduleName = "gpddatabase";
     const std::string className = "ExclusiveDatabase";
 
     //initialize the Python interpreter

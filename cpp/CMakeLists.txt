@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 # add compilator options
 add_compile_options()
 
+# find python
 find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 
 # find numpy
@@ -26,9 +27,6 @@ else()
 	message(STATUS "Found NumPy: " ${NUMPY_INCLUDE_DIR})
 endif()
 
-# additional modules
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
-
 # includes
 include_directories("${PROJECT_SOURCE_DIR}/include" ${Python3_INCLUDE_DIRS} ${NUMPY_INCLUDE_DIR})
 
@@ -39,18 +37,19 @@ file(GLOB_RECURSE SOURCES "${PROJECT_SOURCE_DIR}/src/*.cpp")
 set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 add_library(
-
-        gpddatabase
-
-        SHARED
-
-        ${SOURCES}
+	gpddatabase
+	SHARED
+	${SOURCES}
 )
 
 # define libraries to be linked
 target_link_libraries(
-
-		gpddatabase
-          
-		${Python3_LIBRARIES}
+	gpddatabase
+	${Python3_LIBRARIES}
 )
+
+#install
+install(TARGETS gpddatabase 
+	LIBRARY DESTINATION lib
+)
+install(DIRECTORY include/ DESTINATION include)
