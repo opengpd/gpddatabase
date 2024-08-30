@@ -1,6 +1,7 @@
 from pathlib import Path as path
 import yaml
 from munch import Munch as munch
+import os
 
 from gpddatabase.exclusive_database.markdown.MarkdownExclusiveDatabase import MarkdownExclusiveDatabase as MarkdownFunctionalities
 
@@ -34,15 +35,18 @@ class ExclusiveDatabase(MarkdownFunctionalities):
 			#create
 			cls.instance = super(ExclusiveDatabase, cls).__new__(cls)
 
-			#initialisation
-			cls.path_unit_group_types = 'gpddatabase/data/types/unit_group_types.yaml'
-			cls.path_unit_types = 'gpddatabase/data/types/unit_types.yaml'
-			cls.path_variable_types = 'gpddatabase/data/types/variable_types.yaml'
-			cls.path_data_types = 'gpddatabase/data/types/data_types.yaml'
-			cls.path_observable_types = 'gpddatabase/data/types/observable_types.yaml'
+			#get path
+			module_path = os.path.dirname(os.path.abspath(__file__))
 
-         #use ':' to specify multiple paths
-			cls.path_data = 'gpddatabase/data/DVCS'
+			#initialisation
+			cls.path_unit_group_types = module_path + '/../' + 'data/types/unit_group_types.yaml'
+			cls.path_unit_types = module_path + '/../' + 'data/types/unit_types.yaml'
+			cls.path_variable_types = module_path + '/../' + 'data/types/variable_types.yaml'
+			cls.path_data_types = module_path + '/../' + 'data/types/data_types.yaml'
+			cls.path_observable_types = module_path + '/../' + 'data/types/observable_types.yaml'
+
+         	#use ':' to specify multiple paths
+			cls.path_data = module_path + '/../' + 'data/DVCS'
 
 			#define and load types
 			cls.required_types = None
