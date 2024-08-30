@@ -3,6 +3,8 @@
 
 #include "PythonObject.h"
 
+namespace gpddatabase{
+
 class DataObjectKinematicBin : public PythonObject {
 
 public:
@@ -11,6 +13,8 @@ public:
 
     double get_min();
     double get_max();
+};
+
 };
 
 #endif

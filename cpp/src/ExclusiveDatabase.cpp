@@ -5,6 +5,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 ExclusiveDatabase* ExclusiveDatabase::m_pInstance = nullptr;
 
 ExclusiveDatabase* ExclusiveDatabase::getInstance(){
@@ -84,3 +86,5 @@ std::shared_ptr<DataObject> ExclusiveDatabase::get_data_object(const std::string
 
     return std::shared_ptr<DataObject>(result);
 }
+
+};

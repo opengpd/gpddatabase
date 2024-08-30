@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObject::DataObject(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -22,3 +24,5 @@ std::shared_ptr<DataObjectCorrelation> DataObject::get_correlation(){
 std::shared_ptr<DataObjectData> DataObject::get_data(){
     return std::shared_ptr<DataObjectData>(new DataObjectData(Utility::executeFunction(m_pPyObject, "get_data")));    
 }
+
+};

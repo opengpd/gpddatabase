@@ -9,6 +9,8 @@
 #include "DataObjectCorrelation.h"
 #include "DataObjectData.h"
 
+namespace gpddatabase{
+
 class DataObject : public PythonObject {
 
 public:
@@ -19,6 +21,8 @@ public:
     std::shared_ptr<DataObjectGeneralInfo> get_general_info();
     std::shared_ptr<DataObjectCorrelation> get_correlation();
     std::shared_ptr<DataObjectData> get_data();
+};
+
 };
 
 #endif

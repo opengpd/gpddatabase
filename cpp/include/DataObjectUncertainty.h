@@ -3,6 +3,8 @@
 
 #include "PythonObject.h"
 
+namespace gpddatabase{
+
 class DataObjectUncertainty : public PythonObject {
 
 public:
@@ -13,6 +15,8 @@ public:
     double get_unc_upper();
     bool is_asymmetric();
     double get_unc();
+};
+
 };
 
 #endif

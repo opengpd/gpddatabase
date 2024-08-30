@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObjectDataPoint::DataObjectDataPoint(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -78,3 +80,5 @@ std::vector<std::shared_ptr<DataObjectKinematicBin> > DataObjectDataPoint::get_k
 std::vector<std::shared_ptr<DataObjectReplicaSet> > DataObjectDataPoint::get_kinematics_replicas(){
 	return Utility::PyListToVectorPointer<DataObjectReplicaSet>(Utility::executeFunction(m_pPyObject, "get_kinematics_replicas"));
 }
+
+};

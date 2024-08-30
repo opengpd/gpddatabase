@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObjectGeneralInfo::DataObjectGeneralInfo(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -34,3 +36,5 @@ std::map<std::string, std::any> DataObjectGeneralInfo::get_conditions(){
 std::string DataObjectGeneralInfo::get_comment(){
 	return Utility::PyObjectToString(Utility::executeFunction(m_pPyObject, "get_comment"));
 }
+
+};

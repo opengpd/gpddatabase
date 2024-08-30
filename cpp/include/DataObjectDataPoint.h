@@ -11,6 +11,8 @@
 #include "DataObjectKinematicBin.h"
 #include "DataObjectReplicaSet.h"
 
+namespace gpddatabase{
+
 class DataObjectDataPoint : public PythonObject {
 
 public:
@@ -37,6 +39,8 @@ public:
     std::shared_ptr<DataObjectUncertaintySet> get_kinematics_uncertainties();
     std::vector<std::shared_ptr<DataObjectKinematicBin> > get_kinematics_bins();
     std::vector<std::shared_ptr<DataObjectReplicaSet> > get_kinematics_replicas();
+};
+
 };
 
 #endif

@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+namespace gpddatabase{
+
 PythonObject::PythonObject(PyObject* pyObject){
 
 	if(pyObject == nullptr){
@@ -21,3 +23,5 @@ PythonObject::~PythonObject(){
 		m_pPyObject = nullptr;
 	}
 }
+
+};

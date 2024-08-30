@@ -7,6 +7,8 @@
 #include <map>
 #include <vector>
 
+namespace gpddatabase{
+
 class DataObjectCorrelation : public PythonObject {
 
 public:
@@ -16,6 +18,8 @@ public:
     std::map<std::string, std::vector<std::vector<double> > > get_correlation_matrices();
     std::vector<std::string> get_correlation_matrix_labels();
     std::vector<std::vector<double> > get_correlation_matrix(const std::string& label);
+};
+
 };
 
 #endif

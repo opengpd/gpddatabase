@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObjectData::DataObjectData(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -23,3 +25,5 @@ std::shared_ptr<DataObjectDataSet> DataObjectData::get_data_set(const std::strin
 
 	return std::shared_ptr<DataObjectDataSet>(new DataObjectDataSet(result));    
 }
+
+};

@@ -8,6 +8,8 @@
 #include <memory>
 #include <iostream>
 
+namespace gpddatabase{
+
 namespace Utility{
 
 	bool PyObjectToBool(PyObject* pObj, bool destroyOrigin = true);
@@ -77,5 +79,7 @@ namespace Utility{
 
 	    return result;	
 	}
+
+};
 
 };

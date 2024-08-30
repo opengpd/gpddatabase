@@ -5,6 +5,8 @@
 
 #include <string>
 
+namespace gpddatabase{
+
 class DataObjectUUID : public PythonObject {
 
 public:
@@ -12,6 +14,8 @@ public:
     DataObjectUUID(PyObject* pyObject);
 
     std::string get_uuid();
+};
+
 };
 
 #endif

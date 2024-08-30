@@ -8,6 +8,8 @@
 
 #include "DataObject.h"
 
+namespace gpddatabase{
+
 class ExclusiveDatabase {
 
 public:
@@ -28,6 +30,8 @@ private:
     PyObject* m_pPythonModule; 
     PyObject* m_pPythonClass; 
     PyObject* m_pPythonInstance;
+};
+
 };
 
 #endif

@@ -7,6 +7,8 @@
 
 #include "DataObjectDataPoint.h"
 
+namespace gpddatabase{
+
 class DataObjectDataSet : public PythonObject {
 
 public:
@@ -15,6 +17,8 @@ public:
 
     size_t get_number_of_data_points();
     std::shared_ptr<DataObjectDataPoint> get_data_point(size_t i);
+};
+
 };
 
 #endif

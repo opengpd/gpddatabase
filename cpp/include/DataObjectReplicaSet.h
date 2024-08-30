@@ -5,6 +5,8 @@
 
 #include <vector>
 
+namespace gpddatabase{
+
 class DataObjectReplicaSet : public PythonObject {
 
 public:
@@ -12,6 +14,8 @@ public:
     DataObjectReplicaSet(PyObject* pyObject);
 
     std::vector<double> get_values();
+};
+
 };
 
 #endif

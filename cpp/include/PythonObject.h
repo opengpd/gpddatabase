@@ -3,6 +3,8 @@
 
 #include <Python.h>
 
+namespace gpddatabase{
+
 class PythonObject {
 
 public:
@@ -14,6 +16,8 @@ protected:
     PythonObject(PyObject* pyObject);
 
     PyObject* m_pPyObject;
+};
+
 };
 
 #endif

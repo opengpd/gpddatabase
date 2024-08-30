@@ -10,6 +10,8 @@
 
 #include "DataObjectDataSet.h"
 
+namespace gpddatabase{
+
 class DataObjectData : public PythonObject {
 
 public:
@@ -19,6 +21,8 @@ public:
     std::map<std::string, std::shared_ptr<DataObjectDataSet> > get_data_sets();
     std::vector<std::string> get_data_set_labels();
     std::shared_ptr<DataObjectDataSet> get_data_set(const std::string& label);
+};
+
 };
 
 #endif

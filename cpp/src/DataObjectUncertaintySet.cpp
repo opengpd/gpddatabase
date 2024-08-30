@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObjectUncertaintySet::DataObjectUncertaintySet(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -27,3 +29,5 @@ std::shared_ptr<DataObjectUncertainty> DataObjectUncertaintySet::get_uncertainty
 
     return std::shared_ptr<DataObjectUncertainty>(new DataObjectUncertainty(result));    
 }
+
+};

@@ -4,6 +4,8 @@
 
 #include "../include/Utility.h"
 
+namespace gpddatabase{
+
 DataObjectCorrelation::DataObjectCorrelation(PyObject* pyObject) : PythonObject(pyObject){
 }
 
@@ -23,3 +25,5 @@ std::vector<std::vector<double> > DataObjectCorrelation::get_correlation_matrix(
 
 	return result;
 }
+
+};

@@ -4,6 +4,8 @@
 #include <datetime.h>
 #include <numpy/arrayobject.h>
 
+namespace gpddatabase{
+
 namespace Utility{
 
 bool PyObjectToBool(PyObject* pObj, bool destroyOrigin) {
@@ -276,5 +278,7 @@ PyObject* executeFunction(PyObject* pInstance, const std::string& methodName, Py
 
     return pResult;
 }
+
+};
 
 };

@@ -8,6 +8,8 @@
 #include <map>
 #include <any>
 
+namespace gpddatabase{
+
 class DataObjectGeneralInfo : public PythonObject {
 
 public:
@@ -21,6 +23,8 @@ public:
     std::string get_reference();
     std::map<std::string, std::any> get_conditions();
     std::string get_comment();
+};
+
 };
 
 #endif
