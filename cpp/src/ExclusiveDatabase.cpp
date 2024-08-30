@@ -75,13 +75,13 @@ ExclusiveDatabase::~ExclusiveDatabase() {
 }
 
 std::vector<std::string> ExclusiveDatabase::get_uuids(){
-    return  Utility::PyListToVectorString(Utility::executeFunction(m_pPythonInstance, "get_uuids"));
+    return  utility::PyListToVectorString(utility::executeFunction(m_pPythonInstance, "get_uuids"));
 }
 
 std::shared_ptr<DataObject> ExclusiveDatabase::get_data_object(const std::string& uuid){
 
     PyObject* pArgs = PyTuple_Pack(1, PyUnicode_FromString(uuid.c_str()));
-    DataObject* result = new DataObject(Utility::executeFunction(m_pPythonInstance, "get_data_object", pArgs));
+    DataObject* result = new DataObject(utility::executeFunction(m_pPythonInstance, "get_data_object", pArgs));
     Py_DECREF(pArgs);
 
     return std::shared_ptr<DataObject>(result);

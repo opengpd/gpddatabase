@@ -10,7 +10,7 @@
 
 namespace gpddatabase{
 
-namespace Utility{
+namespace utility{
 
 	bool PyObjectToBool(PyObject* pObj, bool destroyOrigin = true);
 	int PyObjectToInteger(PyObject* pObj, bool destroyOrigin = true);
@@ -41,7 +41,7 @@ namespace Utility{
 
 	        while (PyDict_Next(pObj, &pos, &pKey, &pValue)) {
 	            
-	            std::string key = Utility::PyObjectToString(pKey, false);
+	            std::string key = utility::PyObjectToString(pKey, false);
 	            std::shared_ptr<T> value = std::shared_ptr<T>(new T(pValue));
 
 	            result[key] = value;

@@ -10,7 +10,7 @@ DataObjectReplicaSet::DataObjectReplicaSet(PyObject* pyObject) : PythonObject(py
 }
 
 std::vector<double> DataObjectReplicaSet::get_values(){
-    return Utility::PyListToVectorDouble(Utility::executeFunction(m_pPyObject, "get_values"));
+    return utility::PyListToVectorDouble(utility::executeFunction(m_pPyObject, "get_values"));
 }
 
 };

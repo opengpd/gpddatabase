@@ -6,7 +6,7 @@
 
 namespace gpddatabase{
 
-namespace Utility{
+namespace utility{
 
 bool PyObjectToBool(PyObject* pObj, bool destroyOrigin) {
     return bool(PyObjectToInteger(pObj, destroyOrigin));
@@ -209,8 +209,8 @@ std::map<std::string, std::vector<std::vector<double> > > PyDictToMapMatrix(PyOb
 
         while (PyDict_Next(pObj, &pos, &pKey, &pValue)) {
             
-            std::string key = Utility::PyObjectToString(pKey, false);
-            std::vector<std::vector<double> > value = Utility::NumPyMatrixToMatrix(pValue, false);
+            std::string key = utility::PyObjectToString(pKey, false);
+            std::vector<std::vector<double> > value = utility::NumPyMatrixToMatrix(pValue, false);
 
             result[key] = value;
         }
