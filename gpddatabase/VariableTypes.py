@@ -1,13 +1,13 @@
-from gpddatabase.beans.GenericTypes import GenericTypes
+from gpddatabase.GenericTypes import GenericTypes
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownType
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionUnknownType
 
 import gpddatabase as db
 
-class UnitTypes(GenericTypes):
+class VariableTypes(GenericTypes):
 
-	'''Class stroring unit types'''
+	'''Class stroring variable types'''
 
 	def __init__(self, paths):
 
@@ -30,7 +30,7 @@ class UnitTypes(GenericTypes):
 
 	def get_unit_group(self, value):
 
-		'''Get unit group of a given unit.'''
+		'''Get unit group of a given variable.'''
 
 		try:
 			return self.unit_groups[value]

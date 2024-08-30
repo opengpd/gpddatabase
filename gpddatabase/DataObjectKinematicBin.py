@@ -1,9 +1,9 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectKinematicBin import MarkdownDataObjectKinematicBin as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectKinematicBin import MarkdownDataObjectKinematicBin as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionValuesGEQ
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionValuesGEQ
 
 class DataObjectKinematicBin(MarkdownFunctionalities):
 

@@ -1,16 +1,16 @@
 from munch import Munch as munch
 
-from gpddatabase.data_objects.markdown.MarkdownDataObjectGeneralInfo import MarkdownDataObjectGeneralInfo as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectGeneralInfo import MarkdownDataObjectGeneralInfo as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionStringToDate
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionNoRequirement
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionStringToDate
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionNoRequirement
 
 import gpddatabase as db
 
-from gpddatabase.beans.ParticleTypes import ParticleTypes
+from gpddatabase.ParticleTypes import ParticleTypes
 
 class DataObjectGeneralInfo(MarkdownFunctionalities):
 

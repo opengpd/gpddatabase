@@ -1,13 +1,13 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectData import MarkdownDataObjectData as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectData import MarkdownDataObjectData as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLabel
-from gpddatabase.exceptions.Exceptions import ExceptionNotUnique
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownLabel
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionWrongLabel
+from gpddatabase.Exceptions import ExceptionNotUnique
+from gpddatabase.Exceptions import ExceptionUnknownLabel
 
-from gpddatabase.data_objects.DataObjectDataSet import DataObjectDataSet
+from gpddatabase.DataObjectDataSet import DataObjectDataSet
 
 class DataObjectData(MarkdownFunctionalities):
 

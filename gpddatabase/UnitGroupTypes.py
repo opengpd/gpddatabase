@@ -1,4 +1,4 @@
-from gpddatabase.beans.GenericTypes import GenericTypes
+from gpddatabase.GenericTypes import GenericTypes
 
 class UnitGroupTypes(GenericTypes):
 

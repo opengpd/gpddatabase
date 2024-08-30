@@ -1,4 +1,4 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectDataPoint import MarkdownDataObjectDataPoint as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectDataPoint import MarkdownDataObjectDataPoint as MarkdownFunctionalities
 
 class DataObjectDataPoint(MarkdownFunctionalities):
 

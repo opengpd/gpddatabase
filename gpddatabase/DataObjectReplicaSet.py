@@ -1,7 +1,7 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectReplicaSet import MarkdownDataObjectReplicaSet as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectReplicaSet import MarkdownDataObjectReplicaSet as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionWrongType
 
 class DataObjectReplicaSet(MarkdownFunctionalities):
 

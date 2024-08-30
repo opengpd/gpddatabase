@@ -3,23 +3,23 @@ import yaml
 from munch import Munch as munch
 import os
 
-from gpddatabase.exclusive_database.markdown.MarkdownExclusiveDatabase import MarkdownExclusiveDatabase as MarkdownFunctionalities
+from gpddatabase.MarkdownExclusiveDatabase import MarkdownExclusiveDatabase as MarkdownFunctionalities
 
-from gpddatabase.beans.RequiredTypes import RequiredTypes
-from gpddatabase.beans.UnitGroupTypes import UnitGroupTypes
-from gpddatabase.beans.UnitTypes import UnitTypes
-from gpddatabase.beans.VariableTypes import VariableTypes
-from gpddatabase.beans.DataTypes import DataTypes
-from gpddatabase.beans.ParticleTypes import ParticleTypes
-from gpddatabase.beans.ObservableTypes import ObservableTypes
+from gpddatabase.RequiredTypes import RequiredTypes
+from gpddatabase.UnitGroupTypes import UnitGroupTypes
+from gpddatabase.UnitTypes import UnitTypes
+from gpddatabase.VariableTypes import VariableTypes
+from gpddatabase.DataTypes import DataTypes
+from gpddatabase.ParticleTypes import ParticleTypes
+from gpddatabase.ObservableTypes import ObservableTypes
 
-from gpddatabase.data_objects.DataObject import DataObject
-from gpddatabase.data_objects.DataObjectUUID import DataObjectUUID
+from gpddatabase.DataObject import DataObject
+from gpddatabase.DataObjectUUID import DataObjectUUID
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoDirectory
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionNotUniqueUUID
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownUUID
+from gpddatabase.Exceptions import ExceptionNoDirectory
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionNotUniqueUUID
+from gpddatabase.Exceptions import ExceptionUnknownUUID
 
 class ExclusiveDatabase(MarkdownFunctionalities):
 
@@ -39,14 +39,14 @@ class ExclusiveDatabase(MarkdownFunctionalities):
 			module_path = os.path.dirname(os.path.abspath(__file__))
 
 			#initialisation
-			cls.path_unit_group_types = module_path + '/../' + 'data/types/unit_group_types.yaml'
-			cls.path_unit_types = module_path + '/../' + 'data/types/unit_types.yaml'
-			cls.path_variable_types = module_path + '/../' + 'data/types/variable_types.yaml'
-			cls.path_data_types = module_path + '/../' + 'data/types/data_types.yaml'
-			cls.path_observable_types = module_path + '/../' + 'data/types/observable_types.yaml'
+			cls.path_unit_group_types = module_path + '/data/types/unit_group_types.yaml'
+			cls.path_unit_types = module_path + '/data/types/unit_types.yaml'
+			cls.path_variable_types = module_path + '/data/types/variable_types.yaml'
+			cls.path_data_types = module_path + '/data/types/data_types.yaml'
+			cls.path_observable_types = module_path + '/data/types/observable_types.yaml'
 
          	#use ':' to specify multiple paths
-			cls.path_data = module_path + '/../' + 'data/DVCS'
+			cls.path_data = module_path + '/data/DVCS'
 
 			#define and load types
 			cls.required_types = None

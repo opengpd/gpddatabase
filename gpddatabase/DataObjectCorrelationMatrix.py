@@ -1,13 +1,13 @@
 import math
 import numpy as np
 
-from gpddatabase.data_objects.markdown.MarkdownDataObjectCorrelationMatrix import MarkdownDataObjectCorrelationMatrix as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectCorrelationMatrix import MarkdownDataObjectCorrelationMatrix as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLabel
-from gpddatabase.exceptions.Exceptions import ExceptionWrongCorrelationMatrix
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionWrongLabel
+from gpddatabase.Exceptions import ExceptionWrongCorrelationMatrix
 
 class DataObjectCorrelationMatrix(MarkdownFunctionalities):
 

@@ -1,13 +1,13 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectDataSet import MarkdownDataObjectDataSet as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectDataSet import MarkdownDataObjectDataSet as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionRequiredDiffSizes
-from gpddatabase.exceptions.Exceptions import ExceptionValuesLEQ
-from gpddatabase.exceptions.Exceptions import ExceptionValuesGEQ
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionRequiredDiffSizes
+from gpddatabase.Exceptions import ExceptionValuesLEQ
+from gpddatabase.Exceptions import ExceptionValuesGEQ
 
-from gpddatabase.data_objects.DataObjectKinematics import DataObjectKinematics
-from gpddatabase.data_objects.DataObjectObservable import DataObjectObservable
-from gpddatabase.data_objects.DataObjectDataPoint import DataObjectDataPoint
+from gpddatabase.DataObjectKinematics import DataObjectKinematics
+from gpddatabase.DataObjectObservable import DataObjectObservable
+from gpddatabase.DataObjectDataPoint import DataObjectDataPoint
 
 class DataObjectDataSet(MarkdownFunctionalities):
 

@@ -1,16 +1,16 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectKinematics import MarkdownDataObjectKinematics as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectKinematics import MarkdownDataObjectKinematics as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionNotUnique
-from gpddatabase.exceptions.Exceptions import ExceptionRequiredDiffSizes
-from gpddatabase.exceptions.Exceptions import ExceptionDifferentUnitGroups
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionNotUnique
+from gpddatabase.Exceptions import ExceptionRequiredDiffSizes
+from gpddatabase.Exceptions import ExceptionDifferentUnitGroups
+from gpddatabase.Exceptions import ExceptionWrongType
 
 import gpddatabase as db
 
-from gpddatabase.data_objects.DataObjectUncertaintySet import DataObjectUncertaintySet
-from gpddatabase.data_objects.DataObjectKinematicBin import DataObjectKinematicBin
-from gpddatabase.data_objects.DataObjectReplicaSet import DataObjectReplicaSet
+from gpddatabase.DataObjectUncertaintySet import DataObjectUncertaintySet
+from gpddatabase.DataObjectKinematicBin import DataObjectKinematicBin
+from gpddatabase.DataObjectReplicaSet import DataObjectReplicaSet
 
 class DataObjectKinematics(MarkdownFunctionalities):
 

@@ -1,12 +1,12 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObject import MarkdownDataObject as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObject import MarkdownDataObject as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownLabel
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionUnknownLabel
 
-from gpddatabase.data_objects.DataObjectUUID import DataObjectUUID
-from gpddatabase.data_objects.DataObjectGeneralInfo import DataObjectGeneralInfo
-from gpddatabase.data_objects.DataObjectData import DataObjectData
-from gpddatabase.data_objects.DataObjectCorrelation import DataObjectCorrelation
+from gpddatabase.DataObjectUUID import DataObjectUUID
+from gpddatabase.DataObjectGeneralInfo import DataObjectGeneralInfo
+from gpddatabase.DataObjectData import DataObjectData
+from gpddatabase.DataObjectCorrelation import DataObjectCorrelation
 
 class DataObject(MarkdownFunctionalities):
 

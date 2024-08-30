@@ -1,7 +1,7 @@
 from particle import Particle
 from particle import ParticleNotFound
 
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownType
+from gpddatabase.Exceptions import ExceptionUnknownType
 
 class ParticleTypes:
 

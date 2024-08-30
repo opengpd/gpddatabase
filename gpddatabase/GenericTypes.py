@@ -1,10 +1,10 @@
 import yaml
 from munch import Munch as munch
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoDataInFile
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionNotUnique
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownType
+from gpddatabase.Exceptions import ExceptionNoDataInFile
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionNotUnique
+from gpddatabase.Exceptions import ExceptionUnknownType
 
 class GenericTypes:
 

@@ -1,7 +1,7 @@
 from pathlib import Path as path
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoDirectory
-from gpddatabase.exceptions.Exceptions import ExceptionNotWritable
+from gpddatabase.Exceptions import ExceptionNoDirectory
+from gpddatabase.Exceptions import ExceptionNotWritable
 
 #since object members in this class are created dynamically, disable pylint error with:
 #pylint: disable=no-member

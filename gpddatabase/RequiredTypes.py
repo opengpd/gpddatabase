@@ -1,5 +1,5 @@
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionUnknownType
+from gpddatabase.Exceptions import ExceptionWrongType
 
 import gpddatabase as db
 

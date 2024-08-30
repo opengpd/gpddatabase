@@ -1,8 +1,8 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectUUID import MarkdownDataObjectUUID as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectUUID import MarkdownDataObjectUUID as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongUUID
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionWrongUUID
 
 class DataObjectUUID(MarkdownFunctionalities):
 

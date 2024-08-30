@@ -1,8 +1,8 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectCorrelation import MarkdownDataObjectCorrelation as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectCorrelation import MarkdownDataObjectCorrelation as MarkdownFunctionalities
 
-from gpddatabase.data_objects.DataObjectCorrelationMatrix import DataObjectCorrelationMatrix
+from gpddatabase.DataObjectCorrelationMatrix import DataObjectCorrelationMatrix
 
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownLabel
+from gpddatabase.Exceptions import ExceptionUnknownLabel
 
 class DataObjectCorrelation(MarkdownFunctionalities):
 

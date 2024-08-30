@@ -1,10 +1,10 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectUncertainty import MarkdownDataObjectUncertainty as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectUncertainty import MarkdownDataObjectUncertainty as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionValuesLEQ
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionAsymmetricUnc
+from gpddatabase.Exceptions import ExceptionValuesLEQ
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionAsymmetricUnc
 
 class DataObjectUncertainty(MarkdownFunctionalities):
 

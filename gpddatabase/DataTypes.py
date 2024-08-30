@@ -1,8 +1,8 @@
-from gpddatabase.beans.GenericTypes import GenericTypes
+from gpddatabase.GenericTypes import GenericTypes
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionRequiredDiffSizes
-from gpddatabase.exceptions.Exceptions import ExceptionUnknownType
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionRequiredDiffSizes
+from gpddatabase.Exceptions import ExceptionUnknownType
 
 import gpddatabase as db
 

@@ -1,18 +1,17 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectObservable import MarkdownDataObjectObservable as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectObservable import MarkdownDataObjectObservable as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionNoField
-from gpddatabase.exceptions.Exceptions import ExceptionNotUnique
-from gpddatabase.exceptions.Exceptions import ExceptionRequiredDiffSizes
-from gpddatabase.exceptions.Exceptions import ExceptionDifferentUnitGroups
-from gpddatabase.exceptions.Exceptions import ExceptionWrongType
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLength
-from gpddatabase.exceptions.Exceptions import ExceptionWrongLabel
-
+from gpddatabase.Exceptions import ExceptionNoField
+from gpddatabase.Exceptions import ExceptionNotUnique
+from gpddatabase.Exceptions import ExceptionRequiredDiffSizes
+from gpddatabase.Exceptions import ExceptionDifferentUnitGroups
+from gpddatabase.Exceptions import ExceptionWrongType
+from gpddatabase.Exceptions import ExceptionWrongLength
+from gpddatabase.Exceptions import ExceptionWrongLabel
 
 import gpddatabase as db
 
-from gpddatabase.data_objects.DataObjectUncertaintySet import DataObjectUncertaintySet
-from gpddatabase.data_objects.DataObjectReplicaSet import DataObjectReplicaSet
+from gpddatabase.DataObjectUncertaintySet import DataObjectUncertaintySet
+from gpddatabase.DataObjectReplicaSet import DataObjectReplicaSet
 
 class DataObjectObservable(MarkdownFunctionalities):
 

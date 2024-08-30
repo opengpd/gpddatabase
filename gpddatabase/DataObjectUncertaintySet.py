@@ -1,9 +1,9 @@
-from gpddatabase.data_objects.markdown.MarkdownDataObjectUncertaintySet import MarkdownDataObjectUncertaintySet as MarkdownFunctionalities
+from gpddatabase.MarkdownDataObjectUncertaintySet import MarkdownDataObjectUncertaintySet as MarkdownFunctionalities
 
-from gpddatabase.exceptions.Exceptions import ExceptionValuesLEQ
-from gpddatabase.exceptions.Exceptions import ExceptionValuesGEQ
+from gpddatabase.Exceptions import ExceptionValuesLEQ
+from gpddatabase.Exceptions import ExceptionValuesGEQ
 
-from gpddatabase.data_objects.DataObjectUncertainty import DataObjectUncertainty
+from gpddatabase.DataObjectUncertainty import DataObjectUncertainty
 
 class DataObjectUncertaintySet(MarkdownFunctionalities):
 
