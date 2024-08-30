@@ -1,0 +1,8 @@
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+disable=C0114,C0103,C0301,R0902,R0903,R0904,R1702,R0912,R0913,R0914,R0915,R0801
+
+[FORMAT]
+indent-string=\t
