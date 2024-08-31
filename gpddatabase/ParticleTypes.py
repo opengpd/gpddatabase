@@ -18,7 +18,7 @@ class ParticleTypes:
 
 			particles = Particle.findall(value)
 
-			if len(particles) != 1:
+			if len(particles) != 1 and value != "p":
 				raise ExceptionAmbiguousParticle(value)
 
 		except ParticleNotFound as err:
@@ -32,7 +32,7 @@ class ParticleTypes:
 
 			particles = Particle.findall(value)
 
-			if len(particles) != 1:
+			if len(particles) != 1 and value != "p":
 				raise ExceptionAmbiguousParticle(value)
 
 			return particles[0].name
@@ -47,7 +47,7 @@ class ParticleTypes:
 		try:
 			particles = Particle.findall(value)
 
-			if len(particles) != 1:
+			if len(particles) != 1 and value != "p":
 				raise ExceptionAmbiguousParticle(value)
 
 			return particles[0]

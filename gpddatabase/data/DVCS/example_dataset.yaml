@@ -10,7 +10,7 @@ general_info:
    collaboration: "Example" # collaboration name releasing data stored (limited to 20 characters)
    reference: "arXiv:01/02" # reference, (limited to 60 characters)
    conditions: # experimental or lattice-QCD conditions
-      lepton_beam_type: e # lepton beam type (enum)
+      lepton_beam_type: e- # lepton beam type (enum)
       lepton_beam_energy: 10. # lepton beam energy (by default in GeV)
       hadron_beam_type: p # hadron beam type (enum)
       hadron_beam_energy: 100. # hadron beam energy (by default in GeV)
