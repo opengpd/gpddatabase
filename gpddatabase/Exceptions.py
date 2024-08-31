@@ -204,3 +204,13 @@ class ExceptionAsymmetricUnc(Exception):
 
 	def __str__(self):
 		return "This uncertainty is asymmetric, use different function"
+
+class ExceptionAmbiguousParticle(Exception):
+
+	'''Exception signaling ambiguous particle label.'''
+
+	def __init__(self, value):
+		self.value = value
+
+	def __str__(self):
+		return "Ambiguous particle label " + str(self.value)

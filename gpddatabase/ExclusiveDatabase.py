@@ -1,7 +1,7 @@
+import os
 from pathlib import Path as path
 import yaml
 from munch import Munch as munch
-import os
 
 from gpddatabase.MarkdownExclusiveDatabase import MarkdownExclusiveDatabase as MarkdownFunctionalities
 
