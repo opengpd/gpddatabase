@@ -43,7 +43,7 @@ jobs:
           export PYTHONPATH="$PWD:$PYTHONPATH"
           cd example
           python create_markdown_pages.py
-          cp docs/* ../../
+          cp docs/* ../../docs/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
