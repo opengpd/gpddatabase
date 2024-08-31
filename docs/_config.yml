@@ -22,8 +22,8 @@ title: GPD database
 email: pawel.sznajder@ncbj.gov.pl
 description: >- 
    Database for studying Generalised Parton Distributions (GPDs) 
-baseurl: /gpd-database
-url: http://pawelsznajder.github.io
+baseurl: /gpddatabase
+url: https://opengpd.github.io 
 twitter_username: ""
 github_username:  pawelsznajder
 show_downloads: false
