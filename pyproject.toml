@@ -8,7 +8,7 @@ namespaces = false
 
 [project]
 name = "gpddatabase"
-version = "0.0.5"
+version = "0.0.1"
 description = "Database for GPD physics"
 readme = "README.md"
 requires-python = ">=3.0"
