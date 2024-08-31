@@ -8,9 +8,9 @@
 
 name: upload-python-package
 
-on: workflow_dispatch
-  # release:
-  #   types: [published]
+on: 
+  release:
+    types: [published]
 
 permissions:
   contents: read
