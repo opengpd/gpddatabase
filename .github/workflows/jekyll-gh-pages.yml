@@ -41,7 +41,7 @@ jobs:
         run: |
           cd main
           export PYTHONPATH="$PWD:$PYTHONPATH"
-          cd docs
+          cd example
           python create_markdown_pages.py
           cp docs/* ../../
       - name: Setup Pages
