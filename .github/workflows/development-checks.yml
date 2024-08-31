@@ -1,6 +1,9 @@
 name: development_checks
 
-on: [push]
+on:
+  push:
+    branches:
+      - "main" 
 
 jobs:
   build:
