@@ -1,4 +1,0 @@
-numpy
-munch
-particle
-PyYAML
