@@ -1,3 +1,2 @@
-# List of availible datasets 
+# GPD database 
 
-[link](data_sets.markdown)
