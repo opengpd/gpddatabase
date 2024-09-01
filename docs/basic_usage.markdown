@@ -163,6 +163,8 @@ obsReplicas = point.get_observables_replicas()
 ## C++
 
 ```cpp
+// example/cpp/src/main.cpp
+
 #include <gpddatabase/ExclusiveDatabase.h>
 
 #include <iostream>
@@ -264,12 +266,12 @@ std::shared_ptr<DataObjectUncertaintySet> kinUnc = point->get_kinematics_uncerta
 // (here the same as the number of kinematic variables)
 std::cout << kinUnc->get_number_of_uncertainties() << std::endl;
 // print the correlation matrix between the uncertainties
-// std::vector<std::vector<double> > corrMatrix = kinUnc->get_correlation_matrix();
-// for (const auto& v1 : corrMatrix){
-//     for (const auto& v2 : v1){
-//         std::cout << v2 << std::endl;
-//     }
-// }
+std::vector<std::vector<double> > corrMatrix = kinUnc->get_correlation_matrix();
+for (const auto& v1 : corrMatrix){
+    for (const auto& v2 : v1){
+        std::cout << v2 << std::endl;
+    }
+}
 // make a pointer to the first uncertainty in the set
 // (here corresponding to the first kinematic variable)
 std::shared_ptr<DataObjectUncertainty> kinUnc0 = kinUnc->get_uncertainty(0);
