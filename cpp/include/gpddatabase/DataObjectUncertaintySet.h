@@ -18,7 +18,7 @@ public:
     DataObjectUncertaintySet(PyObject* pyObject);
 
     std::vector<std::shared_ptr<DataObjectUncertainty> > get_uncertainties();
-    std::string get_correlation_matrix();
+    std::vector<std::vector<double> > get_correlation_matrix();
     size_t get_number_of_uncertainties();
     std::shared_ptr<DataObjectUncertainty> get_uncertainty(size_t i);
 };

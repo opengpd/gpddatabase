@@ -34,7 +34,7 @@ public:
     std::vector<std::shared_ptr<DataObjectReplicaSet> > get_observables_replicas();
 
     std::vector<std::string> get_kinematics_names();
-    std::vector<std::string> kinematics_units();
+    std::vector<std::string> get_kinematics_units();
     std::vector<double> get_kinematics_values();
     std::shared_ptr<DataObjectUncertaintySet> get_kinematics_uncertainties();
     std::vector<std::shared_ptr<DataObjectKinematicBin> > get_kinematics_bins();

@@ -36,6 +36,22 @@ data:
             # or alternatively: 
             # value: [[0.2, 1], [0.3, 2], [0.4, 3]]
 
+            unc: # uncertainties associated to the mean values (optional)
+                - [0.0015, 0.016] # 1st bin: xB = 0.2 +- 0.0015, Q2/GeV2 = 1.5 +- 0.016 
+                - [0.0012, 0.011] # ...
+                - [0.0019, 0.013] # 3th bin: xB = 0.4 +- 0.0019, Q2/GeV2 = 3.1 +- 0.013
+            bin: # bin boundaries (optional)
+                - [[0.11, 0.25], [1, 2]] # 1st bin: 0.11 < xB < 0.25 and 1 < Q2/GeV2 < 2
+                - [[0.25, 0.35], [2, 3]] # ...
+                - [[0.35, 0.52], [3, 4]] # 1st bin: 0.35 < xB < 0.52 and 3 < Q2/GeV2 < 4
+            replica: # values obtained from replicas used in the related analysis (optional)
+                     # in the first bin three replicas give: 
+                     # xB = {0.2005, 0.1967, 0.1995} and Q2 = {1.514, 1.502, 1.487} 
+                     # the same replicas in the second bin give:
+                     # xB = {0.2997, 0.3005, 0.2988} and Q2 = {2.212, 2.193, 2.207} 
+                - [[0.2005, 0.1967, 0.1995], [1.514, 1.502, 1.487]] 
+                - [[0.2997, 0.3005, 0.2988], [2.212, 2.193, 2.207]]
+                - [[0.4002, 0.4003, 0.3987], [3.094, 3.094, 3.107]]
 
         observable: # data related to observables
 
@@ -79,7 +95,7 @@ data:
                      # in the first bin three replicas give: 
                      # ALU = {0.132, 0.127, 0.140} and ALL = {0.295, 0.237, 0.327} 
                      # the same replicas in the second bin give
-                     # ALU = {.137, 0.149, 0.105} and ALL = {0.183, 0.232, 0.306} 
+                     # ALU = {0.137, 0.149, 0.105} and ALL = {0.183, 0.232, 0.306} 
                 - [[0.132, 0.127, 0.140], [0.295, 0.237, 0.327]] 
                 - [[0.137, 0.149, 0.105], [0.183, 0.232, 0.306]]
                 - [[0.097, 0.113, 0.120], [0.259, 0.262, 0.259]]
@@ -88,8 +104,8 @@ data:
             norm_unc_contrib_label: ["target_pol", "beam_pol"] # labels of contributions to 
                                                                # systematic uncertainties (optional)
                                                                # limited to 20 characters 
-            norm_unc_contrib: [[0.01, 0.001], [0.0014, 0.0019]] # contributions to systematic
-                                                                   # uncertainties (optional)
+            norm_unc_contrib: [[999999, 0.001], [0.0014, 0.0019]] # contributions to systematic
+                                                             # uncertainties (optional)
                                                     # contributions are: 
                                                     # 0.0006 and 0.0014 for source labeled as 'target_pol'
                                                     # 0.0008 and 0.0019 for source labeled as 'beam_pol'

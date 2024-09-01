@@ -13,8 +13,8 @@ std::vector<std::shared_ptr<DataObjectUncertainty> > DataObjectUncertaintySet::g
     return utility::PyListToVectorPointer<DataObjectUncertainty>(utility::executeFunction(m_pPyObject, "get_uncertainties"));
 }
 
-std::string DataObjectUncertaintySet::get_correlation_matrix(){
-    return utility::PyObjectToString(utility::executeFunction(m_pPyObject, "get_correlation_matrix"));
+std::vector<std::vector<double> > DataObjectUncertaintySet::get_correlation_matrix(){
+    return utility::NumPyMatrixToMatrix(utility::executeFunction(m_pPyObject, "get_correlation_matrix"));
 }
 
 size_t DataObjectUncertaintySet::get_number_of_uncertainties(){
