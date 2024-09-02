@@ -18,6 +18,8 @@ class MarkdownExclusiveDatabase:
 
 		output += '# Available datasets' + '\n'
 		output += '\n'
+		output += '| uuid | collaboration | reference | type | pseudo | observables | comment |' + '\n'
+		output += '| ---- | ------------- | --------- | ---- | ------ | ----------- | ------- |' + '\n'
 
 		#check if directory exist
 		if not path(directory).is_dir():
@@ -30,7 +32,25 @@ class MarkdownExclusiveDatabase:
 			dataObject = self.get_data_object(uuid)
 
 			#print
-			output += '[' + uuid + '](' + 'file_' + uuid + '.markdown' + ')' + '\n'
+			output += '| ' + '[' + uuid + '](' + 'file_' + uuid + '.markdown' + ')' 
+			output += ' | ' + dataObject.get_general_info().get_collaboration()
+			output += ' | ' + dataObject.get_general_info().get_reference()
+			output += ' | ' + dataObject.get_general_info().get_data_type()
+			output += ' | ' + str(dataObject.get_general_info().get_pseudodata())
+
+			output += ' |'
+
+			observableNames = []
+
+			for label in dataObject.get_data().get_data_set_labels():
+				for observableName in dataObject.get_data().get_data_set(label).get_observables().get_names():
+					if observableName not in observableNames:
+						observableNames.append(observableName)
+
+			for observableName in observableNames:
+				output += ' ' + observableName
+
+			output += ' | ' + str(dataObject.get_general_info().get_comment())
 
 			#write
 			try:
