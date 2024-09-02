@@ -1,5 +1,10 @@
 # Basic usage 
 
+Please note that the technical documentation can be accessed via Python built-in command `help()`, or (very conveniently) by opening your console and running:
+```bash
+pydoc -b gpddatabase
+```
+
 The following examples present the basic usage of the library in either Python or C++ codes. They demonstrate how to:
 
 - get the list of available data files
@@ -7,6 +12,7 @@ The following examples present the basic usage of the library in either Python o
 - get metadata
 - loop over available data points 
 
+he presented files can be found in `example` directory, see [this link](https://github.com/opengpd/gpddatabase/tree/main/example). 
 
 ## Python
 
