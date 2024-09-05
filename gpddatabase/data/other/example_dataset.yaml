@@ -104,7 +104,7 @@ data:
             norm_unc_contrib_label: ["target_pol", "beam_pol"] # labels of contributions to 
                                                                # systematic uncertainties (optional)
                                                                # limited to 20 characters 
-            norm_unc_contrib: [[999999, 0.001], [0.0014, 0.0019]] # contributions to systematic
+            norm_unc_contrib: [[0., 0.001], [0.0014, 0.0019]] # contributions to systematic
                                                              # uncertainties (optional)
                                                     # contributions are: 
                                                     # 0.0006 and 0.0014 for source labeled as 'target_pol'

@@ -12,7 +12,7 @@ class DataObjectKinematicBin(MarkdownFunctionalities):
 	def __init__(self, data):
 
 		#min max
-		if not data:
+		if data is None:
 			raise ExceptionNoField('bin')
 
 		if len(data) != 2:

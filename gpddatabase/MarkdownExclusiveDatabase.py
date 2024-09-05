@@ -28,6 +28,9 @@ class MarkdownExclusiveDatabase:
 		#loop over all files
 		for uuid in self.get_uuids():
 
+			#print status 
+			print("info: working for: ", uuid)
+
 			#get object
 			dataObject = self.get_data_object(uuid)
 
@@ -51,6 +54,8 @@ class MarkdownExclusiveDatabase:
 				output += ' ' + observableName
 
 			output += ' | ' + str(dataObject.get_general_info().get_comment())
+
+			output += ' | ' + '\n' 
 
 			#write
 			try:

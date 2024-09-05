@@ -198,6 +198,28 @@ class ExceptionValuesLEQ(Exception):
 	def __str__(self):
 		return "Value " + str(self.valueA) + " smaller or equal value " + str(self.valueB)
 
+class ExceptionValuesGT(Exception):
+
+	'''Exception signaling valueA > valueB'''
+
+	def __init__(self, valueA, valueB):
+		self.valueA = valueA
+		self.valueB = valueB
+
+	def __str__(self):
+		return "Value " + str(self.valueA) + " grater than value " + str(self.valueB)
+
+class ExceptionValuesLT(Exception):
+
+	'''Exception signaling valueA < valueB'''
+
+	def __init__(self, valueA, valueB):
+		self.valueA = valueA
+		self.valueB = valueB
+
+	def __str__(self):
+		return "Value " + str(self.valueA) + " smaller than value " + str(self.valueB)
+
 class ExceptionAsymmetricUnc(Exception):
 
 	'''Exception signaling asymmetric uncertainty.'''

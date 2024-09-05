@@ -13,7 +13,7 @@ data:
     description: "skewness variable"
     unit_group: NONE
   # nu
-  - name: nu
+  - name: nuI
     description: "Ioffe time"
     unit_group: NONE
 
@@ -29,4 +29,15 @@ data:
   - name: Q2
     description: "virtuality of incoming virtual photon"
     unit_group: EV2  
-
+ # phi
+  - name: phi
+    description: "azimuthal angle between the leptonic and hadronic planes (Trento convention)"
+    unit_group: ANGLE
+  # nu 
+  - name: nu 
+    description: "energy of virtual photon"
+    unit_group: EV 
+  # W 
+  - name: W 
+    description: "invariant mass of virtual photon - target system"
+    unit_group: EV 

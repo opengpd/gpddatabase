@@ -1,6 +1,6 @@
 from gpddatabase.MarkdownDataObjectUncertainty import MarkdownDataObjectUncertainty as MarkdownFunctionalities
 
-from gpddatabase.Exceptions import ExceptionValuesLEQ
+from gpddatabase.Exceptions import ExceptionValuesLT
 from gpddatabase.Exceptions import ExceptionWrongLength
 from gpddatabase.Exceptions import ExceptionWrongType
 from gpddatabase.Exceptions import ExceptionNoField
@@ -13,13 +13,13 @@ class DataObjectUncertainty(MarkdownFunctionalities):
 	def __init__(self, data):
 
 		#get
-		if not data:
+		if data is None:
 			raise ExceptionNoField('unc')
 
 		if isinstance(data, (int, float)):
 
-			if data <= 0.:
-				raise ExceptionValuesLEQ(data, 0)
+			if data < 0.:
+				raise ExceptionValuesLT(data, 0.)
 
 			self.unc_lower = data
 			self.unc_upper = data
@@ -34,8 +34,8 @@ class DataObjectUncertainty(MarkdownFunctionalities):
 				if (not isinstance(value, int)) and (not isinstance(value, float)):
 					raise ExceptionWrongType('unc')
 
-				if value <= 0.:
-					raise ExceptionValuesLEQ(value, 0)
+				if value < 0.:
+					raise ExceptionValuesLT(value, 0.)
 
 			if len(data) == 2:
 				self.unc_lower = data[0]

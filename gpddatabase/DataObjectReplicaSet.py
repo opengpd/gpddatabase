@@ -12,7 +12,7 @@ class DataObjectReplicaSet(MarkdownFunctionalities):
 		#values
 		self.values = []
 
-		if not data:
+		if data is None:
 			raise ExceptionNoField('replica')
 
 		for value in data:
