@@ -28,14 +28,14 @@ class MarkdownExclusiveDatabase:
 		#loop over all files
 		for uuid in self.get_uuids():
 
-			#print status 
+			#print status
 			print("info: working for: ", uuid)
 
 			#get object
 			dataObject = self.get_data_object(uuid)
 
 			#print
-			output += '| ' + '[' + uuid + '](' + 'file_' + uuid + '.markdown' + ')' 
+			output += '| ' + '[' + uuid + '](' + 'file_' + uuid + '.markdown' + ')'
 			output += ' | ' + dataObject.get_general_info().get_collaboration()
 			output += ' | ' + dataObject.get_general_info().get_reference()
 			output += ' | ' + dataObject.get_general_info().get_data_type()
@@ -55,7 +55,7 @@ class MarkdownExclusiveDatabase:
 
 			output += ' | ' + str(dataObject.get_general_info().get_comment())
 
-			output += ' | ' + '\n' 
+			output += ' | ' + '\n'
 
 			#write
 			try:
