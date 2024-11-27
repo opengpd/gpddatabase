@@ -150,3 +150,46 @@ data:
   - name: ALTDVCSSinPhiMPhisSin1Phi
     description: "Double transverse target-spin asymmetry (LT), beam charge sum, sin(φ-φs)sin1φ moment"
     unit_group: NONE       
+
+  # Generalized Form Factors int dx x^n H(x, xi, t) = sum_(k = 0, even)^n A_(n,k)(t) xi^k + mod(n, 2) C_(n) xi^(n+1)
+  #                          int dx x^n E(x, xi, t) = sum_(k = 0, even)^n B_(n,k)(t) xi^k - mod(n,2) C_(n) xi^(n+1)
+  - name: A10
+    description: "Moment of the GPD H: <x^0, xi^0>, Elastic form factor"
+    unit_group: NONE
+  - name: A20
+    description: "Moment of the GPD H: <x^1, xi^0>, Gravitational form factor"
+    unit_group: NONE
+  - name: A30
+    description: "Moment of the GPD H: <x^2, xi^0>"
+    unit_group: NONE             
+  - name: A40
+    description: "Moment of the GPD H: <x^3, xi^0>"
+    unit_group: NONE             
+
+  - name: A32
+    description: "Moment of the GPD H: <x^2, xi^2>"
+    unit_group: NONE             
+  - name: A42
+    description: "Moment of the GPD H: <x^3, xi^2>"
+    unit_group: NONE             
+ 
+  - name: B10
+    description: "Moment of the GPD E: <x^0, xi^0>, Elastic form factor"
+    unit_group: NONE             
+  - name: B20
+    description: "Moment of the GPD E: <x^1, xi^0>, Gravitational form factor"
+    unit_group: NONE             
+  - name: B30
+    description: "Moment of the GPD E: <x^2, xi^0>"
+    unit_group: NONE             
+  - name: B40
+    description: "Moment of the GPD E: <x^3, xi^0>"
+    unit_group: NONE             
+
+  - name: B32
+    description: "Moment of the GPD E: <x^2, xi^2>"
+    unit_group: NONE             
+  - name: B42
+    description: "Moment of the GPD E: <x^3, xi^2>"
+    unit_group: NONE             
+ 
