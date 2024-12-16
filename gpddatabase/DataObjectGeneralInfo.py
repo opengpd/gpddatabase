@@ -100,13 +100,23 @@ class DataObjectGeneralInfo(MarkdownFunctionalities):
 			if requirement not in self.conditions:
 
 				if requirement == 'hadron_beam_energy':
-					self.conditions['hadron_beam_energy'] = 0.001 * ParticleTypes().get_particle(self.conditions['hadron_beam_type']).mass
+					self.conditions['hadron_beam_energy'] = ParticleTypes().get_particle(self.conditions['hadron_beam_type']).mass
 				else:
 					raise ExceptionNoRequirement(requirement)
 
 			else:
 				db.ExclusiveDatabase().get_required_types().check_value(
 					db.ExclusiveDatabase().get_data_types().get_required_type_by_name(self.data_type, requirement),
+					self.conditions[requirement]
+				)
+
+		for requirement in db.ExclusiveDatabase().get_data_types().get_optional_name(self.data_type):
+			if requirement not in self.conditions:
+				self.conditions[requirement] = db.ExclusiveDatabase().get_data_types().get_optional_default_by_name(self.data_type, requirement)
+
+			else:
+				db.ExclusiveDatabase().get_required_types().check_value(
+					db.ExclusiveDatabase().get_data_types().get_optional_type_by_name(self.data_type, requirement),
 					self.conditions[requirement]
 				)
 
