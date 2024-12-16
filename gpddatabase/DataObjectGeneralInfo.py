@@ -100,7 +100,7 @@ class DataObjectGeneralInfo(MarkdownFunctionalities):
 			if requirement not in self.conditions:
 
 				if requirement == 'hadron_beam_energy':
-					self.conditions['hadron_beam_energy'] = ParticleTypes().get_particle(self.conditions['hadron_beam_type']).mass
+					self.conditions['hadron_beam_energy'] = 0.001 * ParticleTypes().get_particle(self.conditions['hadron_beam_type']).mass # MeV -> GeV
 				else:
 					raise ExceptionNoRequirement(requirement)
 
