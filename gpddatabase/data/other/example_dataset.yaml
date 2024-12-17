@@ -7,8 +7,8 @@ general_info:
    data_type: DVCS # data type (enum)
    pseudodata: true # tag to distinguish between data and pseudo-data (e.g. Monte Carlo study)
                     # (optional) if not set pseudodata = false
-   collaboration: "Example" # collaboration name releasing data stored (limited to 20 characters)
-   reference: "arXiv:01/02" # reference, (limited to 60 characters)
+   collaboration: "Example" # collaboration name releasing data stored (limited to 40 characters)
+   reference: "arXiv:01/02" # reference, (limited to 255 characters)
    conditions: # experimental or lattice-QCD conditions
       lepton_beam_type: e- # lepton beam type (enum)
       lepton_beam_energy: 10. # lepton beam energy (by default in GeV)
@@ -22,7 +22,7 @@ data:
     - data_set: 
 
         label: "Q2_dep" # label of current data set
-                        # limited to 20 characters 
+                        # limited to 40 characters 
    
         kinematics: # data related to kinematics
 
@@ -77,7 +77,7 @@ data:
                                                # 'corr_matrix1' matrix, see 'correlation' section
             sys_unc_contrib_label: ["fit", "detector"] # labels of contributions to systematic 
                                                        # uncertainties (optional)
-                                                       # limited to 20 characters 
+                                                       # limited to 40 characters 
             sys_unc_contrib: # contributions to systematic uncertainties (optional)
                 - [[0.015, 0.013], [0.007, 0.007]] # contributions to systematic uncertainties of 
                                                    # asymmetries measured in the first bin, 
@@ -103,7 +103,7 @@ data:
                                      # ALU +- 0.001, ALL +- 0.002 (for each kinematic bin)
             norm_unc_contrib_label: ["target_pol", "beam_pol"] # labels of contributions to 
                                                                # systematic uncertainties (optional)
-                                                               # limited to 20 characters 
+                                                               # limited to 40 characters 
             norm_unc_contrib: [[0., 0.001], [0.0014, 0.0019]] # contributions to systematic
                                                              # uncertainties (optional)
                                                     # contributions are: 

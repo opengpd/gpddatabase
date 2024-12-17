@@ -66,8 +66,8 @@ class DataObjectGeneralInfo(MarkdownFunctionalities):
 		if not isinstance(data['collaboration'], str):
 			raise ExceptionWrongType('collaboration')
 
-		if len(data['collaboration']) > 20:
-			raise ExceptionWrongLength('collaboration', 20)
+		if len(data['collaboration']) > 40:
+			raise ExceptionWrongLength('collaboration', 40)
 
 		self.collaboration = data['collaboration']
 
@@ -82,8 +82,8 @@ class DataObjectGeneralInfo(MarkdownFunctionalities):
 			if not isinstance(data['reference'], str):
 				raise ExceptionWrongType('reference')
 
-			if len(data['reference']) > 60:
-				raise ExceptionWrongLength('reference', 60)
+			if len(data['reference']) > 255:
+				raise ExceptionWrongLength('reference', 255)
 
 			self.reference = data['reference']
 

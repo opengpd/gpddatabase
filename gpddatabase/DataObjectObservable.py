@@ -109,8 +109,8 @@ class DataObjectObservable(MarkdownFunctionalities):
 				if not isinstance(label, str):
 					raise ExceptionWrongType('norm_unc_contrib_label')
 
-				if len(label) > 20:
-					raise ExceptionWrongLength('norm_unc_contrib_label', 20)
+				if len(label) > 40:
+					raise ExceptionWrongLength('norm_unc_contrib_label', 40)
 
 				if not label.replace('_', '').isalnum():
 					raise ExceptionWrongLabel(label)
@@ -200,8 +200,8 @@ class DataObjectObservable(MarkdownFunctionalities):
 				if not isinstance(label, str):
 					raise ExceptionWrongType('sys_unc_contrib_label')
 
-				if len(label) > 20:
-					raise ExceptionWrongLength('sys_unc_contrib_label', 20)
+				if len(label) > 40:
+					raise ExceptionWrongLength('sys_unc_contrib_label', 40)
 
 				if not label.replace('_', '').isalnum():
 					raise ExceptionWrongLabel(label)

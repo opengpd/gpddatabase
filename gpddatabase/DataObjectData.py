@@ -35,8 +35,8 @@ class DataObjectData(MarkdownFunctionalities):
 				if not isinstance(label, str):
 					raise ExceptionWrongType('label')
 
-				if len(label) > 20:
-					raise ExceptionWrongLength('label', 20)
+				if len(label) > 40:
+					raise ExceptionWrongLength('label', 40)
 
 				if not label.replace('_', '').isalnum():
 					raise ExceptionWrongLabel(label)
