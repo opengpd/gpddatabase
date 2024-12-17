@@ -104,4 +104,6 @@ class MarkdownDataObjectDataSet:
 		for i in range(0, self.get_number_of_data_points()):
 			output += '| ' + str(i) + self.get_data_point(i).convert_to_markdown() + '\n'
 
+		output += '\n'
+
 		return output
