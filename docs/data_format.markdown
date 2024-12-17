@@ -17,9 +17,9 @@ general_info:
    # tag to distinguish between data and pseudo-data (e.g. Monte Carlo study)
    # (optional) if not set pseudodata = false
    pseudodata: true 
-   # collaboration name releasing data stored (limited to 20 characters)
+   # collaboration name releasing data stored (limited to 40 characters)
    collaboration: "Example" 
-   # reference, (limited to 60 characters)
+   # reference, (limited to 255 characters)
    reference: "arXiv:01/02" 
    # experimental or lattice-QCD conditions
    conditions: 
@@ -42,7 +42,7 @@ data:
     - data_set: 
 
         # label of current data set
-        # limited to 20 characters 
+        # limited to 40 characters 
         label: "Q2_dep" 
    
         # data related to kinematics
@@ -111,7 +111,7 @@ data:
                                                # 'corr_matrix1' matrix, see 'correlation' section
             # labels of contributions to systematic 
             # uncertainties (optional)
-            # limited to 20 characters 
+            # limited to 40 characters 
             sys_unc_contrib_label: ["fit", "detector"] 
             # contributions to systematic uncertainties (optional)
             sys_unc_contrib: 
@@ -141,7 +141,7 @@ data:
             norm_unc: [0.001, 0.002] 
             # labels of contributions to 
             # systematic uncertainties (optional)
-            # limited to 20 characters 
+            # limited to 40 characters 
             norm_unc_contrib_label: ["target_pol", "beam_pol"] 
             # contributions to systematic
             # uncertainties (optional)
