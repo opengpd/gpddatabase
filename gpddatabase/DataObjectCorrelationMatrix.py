@@ -24,8 +24,8 @@ class DataObjectCorrelationMatrix(MarkdownFunctionalities):
 		if not isinstance(self.label, str):
 			raise ExceptionWrongType('label')
 
-		if len(self.label) > 20:
-			raise ExceptionWrongLength('label', 20)
+		if len(self.label) > 40:
+			raise ExceptionWrongLength('label', 40)
 
 		if not self.label.replace('_', '').isalnum():
 			raise ExceptionWrongLabel(self.label)
