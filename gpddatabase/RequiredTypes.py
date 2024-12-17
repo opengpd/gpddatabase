@@ -10,7 +10,7 @@ class RequiredTypes:
 	def __init__(self):
 
 		#define availible values
-		self.required_types = {'bool', 'integer', 'float', 'string', 'particle'}
+		self.required_types = {'bool', 'integer', 'float', 'string', 'particle', 'unit'}
 
 	def check_type(self, value):
 
@@ -37,3 +37,5 @@ class RequiredTypes:
 				raise ExceptionWrongType(valueB)
 		elif valueA == 'particle':
 			db.ExclusiveDatabase().get_particle_types().check_type(valueB)
+		elif valueA == 'unit':
+			db.ExclusiveDatabase().get_unit_types().check_type(valueB)

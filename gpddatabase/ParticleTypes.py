@@ -2,7 +2,6 @@ from particle import Particle
 from particle import ParticleNotFound
 
 from gpddatabase.Exceptions import ExceptionUnknownType
-from gpddatabase.Exceptions import ExceptionAmbiguousParticle
 
 class ParticleTypes:
 
@@ -12,45 +11,20 @@ class ParticleTypes:
 
 		'''Check if type exist. If not, raise exception.'''
 
-		try:
-
-			Particle.findall(value)
-
-			particles = Particle.findall(value)
-
-			if len(particles) != 1 and value != "p":
-				raise ExceptionAmbiguousParticle(value)
-
-		except ParticleNotFound as err:
-			raise ExceptionUnknownType(value) from err
+		self.get_particle(value)
 
 	def get_description(self, value):
 
 		'''Get description of a given type.'''
 
-		try:
-
-			particles = Particle.findall(value)
-
-			if len(particles) != 1 and value != "p":
-				raise ExceptionAmbiguousParticle(value)
-
-			return particles[0].name
-
-		except ParticleNotFound as err:
-			raise ExceptionUnknownType(value) from err
+		return self.get_particle(value).name
 
 	def get_particle(self, value):
 
 		'''Get 'Particle' object (see 'particle' library) for a given type.'''
 
-		try:
-			particles = Particle.findall(value)
+		for particle in Particle.findall(value):
+			if particle.name == value:
+				return particle
 
-			if len(particles) != 1 and value != "p":
-				raise ExceptionAmbiguousParticle(value)
-
-			return particles[0]
-
-		except ParticleNotFound as err:
-			raise ExceptionUnknownType(value) from err
+		raise ExceptionUnknownType(value) from ParticleNotFound
