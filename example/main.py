@@ -2,6 +2,12 @@
 
 # =================================
 
+# uncomment this if you wish to use the local version of gpddatabase module
+import sys
+sys.path.append('..')
+
+# =================================
+
 # import module
 import gpddatabase
 
