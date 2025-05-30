@@ -1,6 +1,6 @@
 # Data format
 
-For the sake of simplicity and portability, the data files use the YAML data serialization format. YAML is an ASCII-based format where the structure of data is defined by indentation. Below is a dummy data file presenting all available features one can use when storing data in the database. The JSON schema file defining the adopted data structure is `test/schema_datafile.json` (see also remarks on the page [Adding new data](new_data.html)). The description of available keys is provided in a form of comments starting with '#' symbol.  
+For the sake of simplicity and portability, the data files use the YAML data serialization format. YAML is an ASCII-based format where the structure of data is defined by indentation. Below is a dummy data file presenting all available features one can use when storing data in the database. The JSON schema file defining the adopted data structure is `test/schema_datafile.json` (see the [online version](https://github.com/opengpd/gpddatabase/blob/main/test/schema_datafile.json) and the remarks on [adding new data](new_data.html)). The description of available keys is provided in a form of comments starting with '#' symbol.  
 
 ```yaml
 ---
