@@ -12,7 +12,7 @@ The following examples present the basic usage of the library in either Python o
 - get metadata
 - loop over available data points 
 
-he presented files can be found in `example` directory, see [this link](https://github.com/opengpd/gpddatabase/tree/main/example). 
+The presented files can be found in `example` directory, see [this link](https://github.com/opengpd/gpddatabase/tree/main/example). 
 
 ## Python
 
