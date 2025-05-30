@@ -11,4 +11,4 @@
 **Resources:**
   * Webpage: [https://opengpd.github.io/gpddatabase](https://opengpd.github.io/gpddatabase)
   * PyPi repository: [https://pypi.org/project/gpddatabase](https://pypi.org/project/gpddatabase)
-  * Reference article: []()
+  * Reference article: [https://arxiv.org/abs/2503.18152](https://arxiv.org/abs/2503.18152)
