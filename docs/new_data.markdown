@@ -45,4 +45,11 @@ db.set_path_to_observable_types("/path/to/your/observable_types.yaml")
 
 ```
 
+Validation of a new file should be performed in two steps. First, the general data format should be checked against the JSON schema available at `data/schema_datafile.json` ([online version](https://github.com/opengpd/gpddatabase/blob/main/test/schema_datafile.json)). For this purpose, it is convenient to use the `test/test_schema.py` script, for example as follows:
+```bash
+cd test
+python3 test_schema.py your_new_data_file.yaml schema_datafile.json
+```
+The `test` directory also contains JSON schema files for the YAML files that define the aforementioned types. Additional validation is performed by the `gpddatabase` library itself, which specifically checks whether relevant strings can be translated into types and whether the stored data is consistent in terms of the number of values in interconnected fields. It is therefore important to check whether `gpddatabase` library can process (use) a new file, as described in [the basic usage](bacis_usage.html). 
+
 When your new data file(s) is ready and you would like to share it with others by adding it to the next official release of the library, create a new branch and pull request at [https://github.com/opengpd/gpddatabase](https://github.com/opengpd/gpddatabase).
