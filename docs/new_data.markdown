@@ -50,6 +50,6 @@ Validation of a new file should be performed in two steps. First, the general da
 cd test
 python3 test_schema.py your_new_data_file.yaml schema_datafile.json
 ```
-The `test` directory also contains JSON schema files for the YAML files that define the aforementioned types. Additional validation is performed by the `gpddatabase` library itself, which specifically checks whether relevant strings can be translated into types and whether the stored data is consistent in terms of the number of values in interconnected fields. It is therefore important to check whether `gpddatabase` library can process (use) a new file, as described in [the basic usage](bacis_usage.html). 
+The `test` directory also contains JSON schema files for the YAML files that define the aforementioned types. Additional validation is performed by the `gpddatabase` library itself, which specifically checks whether relevant strings can be translated into types and whether the stored data is consistent in terms of the number of values in interconnected fields. It is therefore important to check whether `gpddatabase` library can process (use) a new file, as described in [the basic usage](basic_usage.html). 
 
 When your new data file(s) is ready and you would like to share it with others by adding it to the next official release of the library, create a new branch and pull request at [https://github.com/opengpd/gpddatabase](https://github.com/opengpd/gpddatabase).
