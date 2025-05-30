@@ -1,0 +1,417 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Schema used by gpddatabase: data files",
+    "type": "object",
+    "properties": {
+
+
+
+        "uuid": {
+            "type": "string",
+            "minLength": 8, "maxLength": 8,
+            "pattern": "^[0-9a-zA-Z]*$"
+        },
+
+
+
+        "general_info": {
+            "type": "object",
+            "properties": {
+
+                "date": {
+                    "type": "string",
+                    "format": "date"
+                },
+
+                "data_type": {
+                    "type": "string"
+                },
+
+                "pseudodata": {
+                    "type": "boolean"
+                },
+
+                "collaboration": {
+                    "type": "string",
+                    "maxLength": 40
+                },
+
+                "reference": {
+                    "type": "string",
+                    "maxLength": 255
+                },
+
+                "conditions": {
+                    "type": "object",
+                    "additionalProperties": true
+                },
+
+                "comment": {
+                    "type": "string",
+                    "maxLength": 255
+                }          
+            },
+
+            "required": ["date", "data_type", "collaboration", "reference", "conditions"],
+            "additionalProperties": false
+        },
+
+
+
+        "data": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "data_set": {
+                        "type": "object",
+                        "properties": {
+
+                            "label": {
+                                "type": "string",
+                                "maxLength": 40
+                            },
+
+                            "kinematics": {
+                                "type": "object",
+                                "properties": {
+
+                                    "name": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "unit": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "value": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    },
+
+                                    "unc": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
+                                                        "items": {
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }             
+                                    },
+
+                                    "bin": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "array",
+                                                "minItems": 2,
+                                                "maxItems": 2,
+                                                "items": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }
+                                    },
+
+                                    "replica": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                },
+                                "required": ["name", "unit", "value"],
+                                "additionalProperties": false 
+                            }, 
+
+                            "observable": {
+                                "type": "object",
+                                "properties": {
+
+                                    "name": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "unit": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "value": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "number"
+                                            }
+                                        }
+                                    },
+
+
+                                    "stat_unc": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
+                                                        "items": {
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }                  
+                                    },
+
+                                    "sys_unc": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
+                                                        "items": {
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }                                        
+                                    },
+
+                                    "sys_unc_contrib_label": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "sys_unc_contrib": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 1,
+                                                        "items": {
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "number"
+                                                                },
+                                                                {
+                                                                    "type": "array",
+                                                                    "minItems": 2,
+                                                                    "maxItems": 2,
+                                                                    "items": {
+                                                                        "type": "number"
+                                                                    }
+                                                                }
+                                                            ]
+                                                            
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }     
+                                    },
+
+                                    "replica": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "type": "array",
+                                                "minItems": 1,
+                                                "items": {
+                                                    "type": "number"
+                                                }
+                                            }
+                                        }
+                                    },
+
+                                    "norm_unc": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
+                                                        "items": {
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                    },
+
+                                    "norm_unc_contrib_label": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+
+                                    "norm_unc_contrib": {
+                                        "type": "array",
+                                        "minItems": 1,
+                                        "items": {
+                                            "type": "array",
+                                            "minItems": 1,
+                                            "items": {
+                                                "oneOf": [
+                                                    {
+                                                        "type": "number"
+                                                    },
+                                                    {
+                                                        "type": "array",
+                                                        "minItems": 2,
+                                                        "maxItems": 2,
+                                                        "items": {
+                                                            "type": "number"
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }     
+                                    }
+                                                                       
+                                },
+                                "required": ["name", "unit", "value"],
+                                "additionalProperties": false 
+                            }
+                        },
+                        "required": ["label", "kinematics", "observable"],
+                        "additionalProperties": false
+                    }
+                }
+            }
+        },
+
+
+
+        "correlation": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "minItems": 5,
+                "items": [
+                    { "type": "string" }
+                ],
+                "prefixItems": [
+                    { "type": "string" }
+                ],
+                "additionalItems": {
+                    "type": "number"
+                }
+            }
+        }
+
+
+
+    },
+    "required": ["uuid", "general_info", "data"],
+    "additionalProperties": false
+}
