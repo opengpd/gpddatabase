@@ -10,8 +10,10 @@ general_info:
    reference: "article arXiv:2405.10304, database 10.5281/zenodo.13504270"
    conditions:
       hadron_type: p
-      pion_mass: 358. # (MeV)
-      lattice_spacing: 0.094 # (fm)
+      pion_mass: 358.
+      lattice_spacing: 0.094
+      pion_mass_unit: MeV
+      lattice_spacing_unit: fm
 
    comment: "scale 2 GeV2, LL matching, isovector u-d. Replicas are 348 jack-knife samples from 348 gauge cfgs. Multiply by sqrt(347) for standard deviation."
 

@@ -49,6 +49,9 @@ data:
   - name: 1/TeV
     description: "inverse teraelectron-volt"
     unit_group: EV
+  - name: fm
+    description: "femtometer"
+    unit_group: EV
 
   # energy, mass or momentum (eV in natural units)
 

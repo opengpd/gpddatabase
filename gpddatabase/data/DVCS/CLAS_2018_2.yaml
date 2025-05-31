@@ -11,7 +11,6 @@ general_info:
       lepton_beam_type: e-
       lepton_beam_energy: 5.88
       hadron_beam_type: p
-      hadron_beam_energy: 0.93
     comment: "Differential CrossSection for exclusive DVCS electroproduction"
 
 data:
@@ -24082,4 +24081,4 @@ data:
                 - [0.000130986]
                 - [0.000396913]
                 - [0.000396913]
-            scale: [0.0]
+            norm_unc: [0.0]

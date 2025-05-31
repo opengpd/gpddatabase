@@ -11,7 +11,6 @@ general_info:
       lepton_beam_type: e- 
       lepton_beam_energy: 5.55
       hadron_beam_type: n
-      hadron_beam_energy: 0.93
   
     comment: "Beam-helicity-independent cross section"
 
@@ -271,4 +270,4 @@ data:
                     - [11.6229, 11.6442]
                 -
                     - [20.0302, 19.1987]
-            scale: [0.0]
+            norm_unc: [0.0]

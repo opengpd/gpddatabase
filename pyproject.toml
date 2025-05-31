@@ -8,7 +8,7 @@ namespaces = false
 
 [project]
 name = "gpddatabase"
-version = "0.0.3"
+version = "v1.1.0"
 description = "Database for GPD physics"
 readme = "README.md"
 requires-python = ">=3.0"
@@ -17,6 +17,12 @@ classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Topic :: Scientific/Engineering :: Physics"
+]
+dependencies = [
+    "numpy",
+    "munch",
+    "particle",
+    "PyYAML"
 ]
 
 [project.urls]
