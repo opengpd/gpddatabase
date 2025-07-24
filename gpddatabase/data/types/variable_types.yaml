@@ -12,6 +12,10 @@ data:
   - name: xi
     description: "skewness variable"
     unit_group: NONE
+  # mu2 
+  - name: mu2 
+    description: "scale (squared)"
+    unit_group: EV2 
   # nu
   - name: nuI
     description: "Ioffe time"

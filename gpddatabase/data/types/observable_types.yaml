@@ -101,6 +101,11 @@ data:
     description: "Slope of t-distribution"
     unit_group: EVm2 
 
+  # NTB2  
+  - name: NTB2
+    description: "Nucleon tomography: average transverse size of spatial distribution, ⟨b2⟩"
+    unit_group: EVm2 
+
   # AUTDVCSSinPhiMPhisCos0Phi  
   - name: AUTDVCSSinPhiMPhisCos0Phi
     description: "Transverse target-spin asymmetry (UT), beam charge sum, sin(φ-φs)cos0φ moment"
