@@ -19,7 +19,7 @@ data:
         
         kinematics:
             name: [xB, t, Q2, phi]
-            unit: [none, GeV2, GeV2, deg]
+            unit: [none, GeV2, GeV2, rad]
             value:
                 - [0.10852, -0.139944, 1.36679, 0.301683]
                 - [0.0997291, -0.149211, 1.3595, 0.637473]
@@ -551,7 +551,7 @@ data:
                 - [0.433561, -1.92996, 5.91145, 5.85814]
                 - [0.446192, -1.94132, 5.90068, 6.15582]
         observable:
-            name: [ALL]
+            name: [ALU]
             unit: [none]
             value:
                 - [0.129798]
