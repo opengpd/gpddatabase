@@ -3032,7 +3032,7 @@ data:
                 - [0.497, -1.462, 3.966, 337.1]
                 - [0.497, -1.462, 3.966, 337.1]
         observable:
-            name: [DVCSCrossSectionUU]
+            name: [CrossSectionUU]
             unit: [nb]
             value:
                 - [4.8336]
