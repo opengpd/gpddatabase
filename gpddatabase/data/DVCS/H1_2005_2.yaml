@@ -28,7 +28,7 @@ data:
                 - [82., 8., -0.5]
                 - [82., 8., -0.8]
         observable:
-            name: [CrossSectionUUVirtualPhotoProduction]
+            name: [CrossSectionUUVirtualPhotoProductionPhiIntegrated]
             unit: [nb]
             value:
                 - [13.3]

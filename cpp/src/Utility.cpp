@@ -1,8 +1,11 @@
 #include "../include/gpddatabase/Utility.h"
 
 #include <iostream>
+#include <sstream>
 #include <datetime.h>
 #include <numpy/arrayobject.h>
+
+#include "gpddatabase/ExclusiveDatabaseException.h"
 
 namespace gpddatabase{
 
@@ -268,12 +271,19 @@ PyObject* executeFunction(PyObject* pInstance, const std::string& methodName, Py
 
         pResult = PyObject_CallObject(pMethod, pArgs);
 
+        if (pResult == Py_None) {
+            throw ExclusiveDatabaseException("returned type is 'None' and can not be represented by c++ object");
+        }
+
         Py_DECREF(pMethod);
 
     } else {
-        if (PyErr_Occurred()) PyErr_Print();
-        std::cerr << "error: " << __func__ << ": cannot find method " << "get_uuids" << std::endl;
-        exit(0);
+
+        std::stringstream ss;
+        ss << "cannot find method " << methodName;
+
+        PyErr_Clear();
+        throw ExclusiveDatabaseException(ss.str());
     }
 
     return pResult;

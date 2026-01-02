@@ -96,6 +96,10 @@ data:
   - name: CrossSectionUUVirtualPhotoProduction
     description: "Photoproduction cross section"
     unit_group: EVm2
+  # CrossSectionUUVirtualPhotoProductionPhiIntegrated
+  - name: CrossSectionUUVirtualPhotoProductionPhiIntegrated
+    description: "Photoproduction cross section (integrated over phi)"
+    unit_group: EVm2
   # TSlope  
   - name: TSlope
     description: "Slope of t-distribution"
@@ -197,4 +201,29 @@ data:
   - name: B42
     description: "Moment of the GPD E: <x^3, xi^2>"
     unit_group: NONE             
- 
+
+  # Compton form factors 
+  - name: xiRe_H 
+    description: "Real part of CFF H multiplied by xi"
+    unit_group: NONE
+  - name: xiIm_H 
+    description: "Imaginary part of CFF H multiplied by xi"
+    unit_group: NONE
+  - name: xiRe_E 
+    description: "Real part of CFF E multiplied by xi"
+    unit_group: NONE
+  - name: xiIm_E 
+    description: "Imaginary part of CFF E multiplied by xi"
+    unit_group: NONE
+  - name: xiRe_Ht 
+    description: "Real part of CFF Ht (tilde) multiplied by xi"
+    unit_group: NONE
+  - name: xiIm_Ht 
+    description: "Imaginary part of CFF Ht (tilde) multiplied by xi"
+    unit_group: NONE
+  - name: xiRe_Et 
+    description: "Real part of CFF Et (tilde) multiplied by xi"
+    unit_group: NONE
+  - name: xiIm_Et 
+    description: "Imaginary part of CFF Et (tilde) multiplied by xi"
+    unit_group: NONE

@@ -62,7 +62,7 @@ std::vector<std::string> DataObjectDataPoint::get_kinematics_names(){
 }
 
 std::vector<std::string> DataObjectDataPoint::get_kinematics_units(){
-	return utility::PyListToVectorString(utility::executeFunction(m_pPyObject, "kinematics_units"));
+	return utility::PyListToVectorString(utility::executeFunction(m_pPyObject, "get_kinematics_units"));
 }
 
 std::vector<double> DataObjectDataPoint::get_kinematics_values(){

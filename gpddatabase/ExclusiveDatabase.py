@@ -46,7 +46,7 @@ class ExclusiveDatabase(MarkdownFunctionalities):
 			cls.path_observable_types = module_path + '/data/types/observable_types.yaml'
 
          	#use ':' to specify multiple paths
-			cls.path_data = module_path + '/data/DVCS' + ':' + module_path + '/data/latticeQCD' + ':' + module_path + '/data/structure_function' + ':' + module_path + '/data/other'
+			cls.path_data = module_path + '/data/DVCS' + ':' + module_path + '/data/latticeQCD' + ':' + module_path + '/data/structure_function' + ':' + module_path + '/data/other' + ':' + module_path + '/data/DVCS_local'
 
 			#define and load types
 			cls.required_types = None
