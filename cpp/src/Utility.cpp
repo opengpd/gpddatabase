@@ -21,7 +21,11 @@ int PyObjectToInteger(PyObject* pObj, bool destroyOrigin) {
 
     if (PyLong_Check(pObj)) {
         result = PyLong_AsLong(pObj);
-    } else {
+    }
+    else if (PyFloat_Check(pObj)) {
+        result = static_cast<int>(PyFloat_AsDouble(pObj));
+    } 
+    else {
         std::cerr << "error: " << __func__ << ": provided PyObject is not an integer" << std::endl;
         PyErr_Print();
         exit(0);
@@ -38,7 +42,11 @@ double PyObjectToDouble(PyObject* pObj, bool destroyOrigin) {
 
     if (PyFloat_Check(pObj)) {
         result = PyFloat_AsDouble(pObj);
-    } else {
+    } 
+    else if (PyLong_Check(pObj)) {
+        result = static_cast<double>(PyLong_AsLong(pObj));
+    }
+    else {
         std::cerr << "error: " << __func__ << ": provided PyObject is not a float" << std::endl;
         PyErr_Print();
         exit(0);
