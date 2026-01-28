@@ -1,0 +1,54 @@
+---
+uuid: yb9cde91
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: none
+  reference: X. Zhan et al., Phys. Lett. B 705 (2011) 59
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.298]
+      - [0.346]
+      - [0.402]
+      - [0.449]
+      - [0.494]
+      - [0.547]
+      - [0.599]
+      - [0.695]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.9272]
+      - [0.9433]
+      - [0.9318]
+      - [0.9314]
+      - [0.9286]
+      - [0.9274]
+      - [0.9084]
+      - [0.9122]
+      stat_unc:
+      - [0.0114]
+      - [0.0088]
+      - [0.0066]
+      - [0.006]
+      - [0.0054]
+      - [0.0055]
+      - [0.0053]
+      - [0.0045]
+      sys_unc:
+      - [0.0071]
+      - [0.0093]
+      - [0.0076]
+      - [0.0073]
+      - [0.0076]
+      - [0.0071]
+      - [0.0104]
+      - [0.0107]

@@ -1,0 +1,30 @@
+---
+uuid: pc0a40af
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: none
+  reference: M. Paolone et al., Phys. Rev. Lett. 105 (2010) 072001
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.8]
+      - [1.3]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.901]
+      - [0.858]
+      stat_unc:
+      - [0.007]
+      - [0.008]
+      sys_unc:
+      - [0.01]
+      - [0.019]

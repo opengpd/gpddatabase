@@ -1,0 +1,34 @@
+---
+uuid: l068efa7
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: none
+  reference: J. Arrington, W. Melnitchouk and J. A. Tjon, Phys. Rev. C 76 (2007) 035205
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.069]
+      - [0.098]
+      - [0.138]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.986]
+      - [0.996]
+      - [0.982]
+      stat_unc:
+      - [0.021]
+      - [0.01]
+      - [0.018]
+      sys_unc:
+      - [0.0]
+      - [0.0]
+      - [0.0]

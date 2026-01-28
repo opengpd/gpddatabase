@@ -1,0 +1,38 @@
+---
+uuid: yfda0d29
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: Hall A
+  reference: O. Gayou et al., Phys. Rev. Lett. 88 (2002) 092301
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [3.5]
+      - [3.97]
+      - [4.75]
+      - [5.54]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.571]
+      - [0.483]
+      - [0.385]
+      - [0.278]
+      stat_unc:
+      - [0.072]
+      - [0.052]
+      - [0.053]
+      - [0.087]
+      sys_unc:
+      - [0.007]
+      - [0.008]
+      - [0.011]
+      - [0.029]

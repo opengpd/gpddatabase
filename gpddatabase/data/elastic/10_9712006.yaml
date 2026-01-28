@@ -1,0 +1,30 @@
+---
+uuid: qab16e08
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: Bates FPP
+  reference: B. D. Milbrath et al., Phys. Rev. Lett. 80 (1998) 452
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.38]
+      - [0.5]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [1.016]
+      - [0.97]
+      stat_unc:
+      - [0.052]
+      - [0.047]
+      sys_unc:
+      - [0.016]
+      - [0.02]

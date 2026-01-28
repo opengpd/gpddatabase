@@ -38,20 +38,24 @@ data:
     description: "milibarn"
     unit_group: EVm2
 
+  - name: fm2 
+    description: "femtometer squared"
+    unit_group: EVm2
+
   # time or distance (eV^-1 in natural units)
 
   - name: 1/MeV
     description: "inverse megaelectron-volt"
-    unit_group: EV
+    unit_group: EVm1
   - name: 1/GeV
     description: "inverse gigaelectron-volt"
-    unit_group: EV
+    unit_group: EVm1
   - name: 1/TeV
     description: "inverse teraelectron-volt"
-    unit_group: EV
+    unit_group: EVm1
   - name: fm
     description: "femtometer"
-    unit_group: EV
+    unit_group: EVm1
 
   # energy, mass or momentum (eV in natural units)
 

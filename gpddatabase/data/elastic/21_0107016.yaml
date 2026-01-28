@@ -1,0 +1,30 @@
+---
+uuid: f7ece11f
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: none
+  reference: G. Kubon et al., Phys. Lett. B 524 (2002) 26
+  conditions: {hadron_beam_type: n}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.071]
+      - [0.125]
+    observable:
+      name: [GMnorm]
+      unit: [none]
+      value:
+      - [0.99]
+      - [0.967]
+      stat_unc:
+      - [0.013]
+      - [0.013]
+      sys_unc:
+      - [0.0]
+      - [0.0]

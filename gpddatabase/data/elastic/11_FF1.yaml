@@ -1,0 +1,34 @@
+---
+uuid: s96263e4
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: A1
+  reference: T. Pospischil et al., Eur. Phys. J. A 12 (2001) 125
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.373]
+      - [0.401]
+      - [0.441]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.999]
+      - [1.011]
+      - [0.936]
+      stat_unc:
+      - [0.028]
+      - [0.029]
+      - [0.033]
+      sys_unc:
+      - [0.046]
+      - [0.044]
+      - [0.039]

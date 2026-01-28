@@ -227,3 +227,17 @@ data:
   - name: xiIm_Et 
     description: "Imaginary part of CFF Et (tilde) multiplied by xi"
     unit_group: NONE
+
+  # Elastic FF data
+  - name: GMnorm 
+    description: "Magnetic form factor normalized to magnetic moment and dipole form factor"
+    unit_group: NONE
+  - name: muGEoverGM 
+    description: "Ratio of electric and normalized (by mgnetic moment) magnetic form factors"
+    unit_group: NONE
+  - name: GE 
+    description: "Electric form factor"
+    unit_group: NONE
+  - name: r2E 
+    description: "Squared charge radius"
+    unit_group: EVm2 

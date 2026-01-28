@@ -1,0 +1,26 @@
+---
+uuid: ff7eeae4
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: none
+  reference: G. MacLachlan et al., Nucl. Phys. A 764 (2006) 261
+  conditions: {hadron_beam_type: p}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [1.13]
+    observable:
+      name: [muGEoverGM]
+      unit: [none]
+      value:
+      - [0.878]
+      stat_unc:
+      - [0.065]
+      sys_unc:
+      - [0.011]

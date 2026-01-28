@@ -1,0 +1,26 @@
+---
+uuid: x01c93a4
+general_info:
+  date: '2026-01-28'
+  data_type: STRUCTURE_FUNCTION
+  collaboration: Particle Data Group
+  reference: J. Beringer et al., Phys. Rev. D 86 (2012) 010001
+  conditions: {hadron_beam_type: n}
+  comment: as used in Eur. Phys. J. C73 (2013) 4, 2397
+data:
+- data_set:
+    label: eff
+    kinematics:
+      name: [Q2]
+      unit: [GeV2]
+      value:
+      - [0.0022]
+    observable:
+      name: [r2E]
+      unit: [fm2]
+      value:
+      - [-0.1161]
+      stat_unc:
+      - [0.0022]
+      sys_unc:
+      - [0.0]
