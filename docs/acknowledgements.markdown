@@ -7,5 +7,5 @@ The project was supported by:
 -  U.S. Department of Energy, Office of Nuclear Physics,<br>grant no. DE-SC0025218
 -  National Science Centre, Poland,<br>grants no. 2021/43/B/ST2/00497, 2024/53/B/ST2/00968
 
-We also acknowledge:
+We also thank:
 -  Institut Pascal for their hospitality during Hadron Physics 2030 workshop
